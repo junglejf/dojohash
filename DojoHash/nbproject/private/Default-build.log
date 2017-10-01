@@ -1,0 +1,13 @@
+mkdir -p ./build
+gcc -c -o build/encadeamento_exterior.o encadeamento_exterior.c -I.
+mkdir -p ./build
+gcc -c -o build/cliente.o cliente.c -I.
+mkdir -p ./build
+gcc -c -o build/lista_clientes.o lista_clientes.c -I.
+mkdir -p ./build
+gcc -c -o build/compartimento_hash.o compartimento_hash.c -I.
+mkdir -p ./build
+gcc -c -o build/lista_compartimentos.o lista_compartimentos.c -I.
+mkdir -p ./build
+gcc -c -o build/test_encadeamento_exterior.o test_encadeamento_exterior.c -I.
+gcc -o ./build/main build/encadeamento_exterior.o build/cliente.o build/lista_clientes.o build/compartimento_hash.o build/lista_compartimentos.o build/test_encadeamento_exterior.o -I.
